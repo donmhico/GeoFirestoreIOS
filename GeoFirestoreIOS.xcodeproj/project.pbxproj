@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38D8119EF6F4F106CA9C430B /* Pods_GeoFirestoreIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9862444D82EE976A1D2FB06E /* Pods_GeoFirestoreIOS.framework */; };
+		5B8BB60B019664367F497995 /* Pods_GeoFirestoreIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34952ACE478485EC3172956C /* Pods_GeoFirestoreIOSTests.framework */; };
 		60973CD32240BE93008C44E7 /* GeoFirestoreIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60973CC92240BE92008C44E7 /* GeoFirestoreIOS.framework */; };
 		60973CD82240BE93008C44E7 /* GeoFirestoreIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60973CD72240BE93008C44E7 /* GeoFirestoreIOSTests.swift */; };
 		60973CDA2240BE93008C44E7 /* GeoFirestoreIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 60973CCC2240BE92008C44E7 /* GeoFirestoreIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0099FF6FBE025F0A1486EEA6 /* Pods-GeoFirestoreIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoFirestoreIOS.release.xcconfig"; path = "Target Support Files/Pods-GeoFirestoreIOS/Pods-GeoFirestoreIOS.release.xcconfig"; sourceTree = "<group>"; };
+		33C7FA3C54D02B20C530A088 /* Pods-GeoFirestoreIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoFirestoreIOSTests.debug.xcconfig"; path = "Target Support Files/Pods-GeoFirestoreIOSTests/Pods-GeoFirestoreIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		34952ACE478485EC3172956C /* Pods_GeoFirestoreIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoFirestoreIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4759F87B6628DE84ECD03E60 /* Pods-GeoFirestoreIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoFirestoreIOSTests.release.xcconfig"; path = "Target Support Files/Pods-GeoFirestoreIOSTests/Pods-GeoFirestoreIOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		60973CC92240BE92008C44E7 /* GeoFirestoreIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GeoFirestoreIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60973CCC2240BE92008C44E7 /* GeoFirestoreIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeoFirestoreIOS.h; sourceTree = "<group>"; };
 		60973CCD2240BE92008C44E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +43,8 @@
 		60973CE62240C804008C44E7 /* GeoFirestoreIOSProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoFirestoreIOSProtocol.swift; sourceTree = "<group>"; };
 		60973CE92240D26D008C44E7 /* GFIOSGeoHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFIOSGeoHash.swift; sourceTree = "<group>"; };
 		60973CEB2240D494008C44E7 /* GFIOSGeoHashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFIOSGeoHashTests.swift; sourceTree = "<group>"; };
+		9862444D82EE976A1D2FB06E /* Pods_GeoFirestoreIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoFirestoreIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF395721FF60CB48AD99CE63 /* Pods-GeoFirestoreIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoFirestoreIOS.debug.xcconfig"; path = "Target Support Files/Pods-GeoFirestoreIOS/Pods-GeoFirestoreIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D8119EF6F4F106CA9C430B /* Pods_GeoFirestoreIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				60973CD32240BE93008C44E7 /* GeoFirestoreIOS.framework in Frameworks */,
+				5B8BB60B019664367F497995 /* Pods_GeoFirestoreIOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		372D2FB29B9FBD69C6BFC64E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF395721FF60CB48AD99CE63 /* Pods-GeoFirestoreIOS.debug.xcconfig */,
+				0099FF6FBE025F0A1486EEA6 /* Pods-GeoFirestoreIOS.release.xcconfig */,
+				33C7FA3C54D02B20C530A088 /* Pods-GeoFirestoreIOSTests.debug.xcconfig */,
+				4759F87B6628DE84ECD03E60 /* Pods-GeoFirestoreIOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		60973CBF2240BE92008C44E7 = {
 			isa = PBXGroup;
 			children = (
 				60973CCB2240BE92008C44E7 /* GeoFirestoreIOS */,
 				60973CD62240BE93008C44E7 /* GeoFirestoreIOSTests */,
 				60973CCA2240BE92008C44E7 /* Products */,
+				372D2FB29B9FBD69C6BFC64E /* Pods */,
+				9869EFE90D2EBAEB152E8023 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +138,15 @@
 			path = classes;
 			sourceTree = "<group>";
 		};
+		9869EFE90D2EBAEB152E8023 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9862444D82EE976A1D2FB06E /* Pods_GeoFirestoreIOS.framework */,
+				34952ACE478485EC3172956C /* Pods_GeoFirestoreIOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -132,6 +165,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60973CDD2240BE93008C44E7 /* Build configuration list for PBXNativeTarget "GeoFirestoreIOS" */;
 			buildPhases = (
+				63870B41C4530F76ECF57537 /* [CP] Check Pods Manifest.lock */,
 				60973CC42240BE92008C44E7 /* Headers */,
 				60973CC52240BE92008C44E7 /* Sources */,
 				60973CC62240BE92008C44E7 /* Frameworks */,
@@ -150,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60973CE02240BE93008C44E7 /* Build configuration list for PBXNativeTarget "GeoFirestoreIOSTests" */;
 			buildPhases = (
+				9F7DFB23AC26CE798E164055 /* [CP] Check Pods Manifest.lock */,
 				60973CCE2240BE93008C44E7 /* Sources */,
 				60973CCF2240BE93008C44E7 /* Frameworks */,
 				60973CD02240BE93008C44E7 /* Resources */,
+				B1116063EDD5CBDA88308B0A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +253,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63870B41C4530F76ECF57537 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoFirestoreIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F7DFB23AC26CE798E164055 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoFirestoreIOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1116063EDD5CBDA88308B0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoFirestoreIOSTests/Pods-GeoFirestoreIOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeoFirestoreIOSTests/Pods-GeoFirestoreIOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60973CC52240BE92008C44E7 /* Sources */ = {
@@ -373,6 +490,7 @@
 		};
 		60973CDE2240BE93008C44E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF395721FF60CB48AD99CE63 /* Pods-GeoFirestoreIOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -400,6 +518,7 @@
 		};
 		60973CDF2240BE93008C44E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0099FF6FBE025F0A1486EEA6 /* Pods-GeoFirestoreIOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -426,6 +545,7 @@
 		};
 		60973CE12240BE93008C44E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33C7FA3C54D02B20C530A088 /* Pods-GeoFirestoreIOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +565,7 @@
 		};
 		60973CE22240BE93008C44E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4759F87B6628DE84ECD03E60 /* Pods-GeoFirestoreIOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
