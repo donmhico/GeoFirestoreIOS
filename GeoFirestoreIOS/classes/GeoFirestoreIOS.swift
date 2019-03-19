@@ -8,11 +8,7 @@
 
 import Foundation
 
-class GeoFirestoreIOS: GeoFirestoreIOSProtocol {
-    
-    var lat: Double
-    
-    var lng: Double
+class GeoFirestoreIOS {
     
     /**
      * Path where the lat / lng coords will be saved

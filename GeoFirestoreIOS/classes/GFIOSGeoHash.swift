@@ -12,7 +12,7 @@ enum GFIOSGeoHashError: Error {
     case invalidPrecision
 }
 
-class GFIOSGeoHash: GeoFirestoreIOSProtocol {
+class GFIOSGeoHash: GeoPointProtocol {
     
     private let BASE32 = Array("0123456789bcdefghjkmnpqrstuvwxyz");
     
