@@ -10,25 +10,24 @@ import XCTest
 @testable import GeoFirestoreIOS
 
 class GeoFirestoreIOSTests: XCTestCase {
+    
+    var geoFirestore1: GeoFirestoreIOS!
+    var geoFirestore2: GeoFirestoreIOS!
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        geoFirestore1 = GeoFirestoreIOS(lat: 14.6419502, lng: 121.0198245)
+        geoFirestore2 = GeoFirestoreIOS(lat: 15.6419502, lng: 122.0198245)
+        
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        
+        geoFirestore1 = nil
+        geoFirestore2 = nil
+        
     }
 
 }

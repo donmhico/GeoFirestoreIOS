@@ -10,6 +10,10 @@
 		60973CD32240BE93008C44E7 /* GeoFirestoreIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60973CC92240BE92008C44E7 /* GeoFirestoreIOS.framework */; };
 		60973CD82240BE93008C44E7 /* GeoFirestoreIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60973CD72240BE93008C44E7 /* GeoFirestoreIOSTests.swift */; };
 		60973CDA2240BE93008C44E7 /* GeoFirestoreIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 60973CCC2240BE92008C44E7 /* GeoFirestoreIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60973CE42240C109008C44E7 /* GeoFirestoreIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60973CE32240C109008C44E7 /* GeoFirestoreIOS.swift */; };
+		60973CE72240C804008C44E7 /* GeoFirestoreIOSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60973CE62240C804008C44E7 /* GeoFirestoreIOSProtocol.swift */; };
+		60973CEA2240D26D008C44E7 /* GFIOSGeoHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60973CE92240D26D008C44E7 /* GFIOSGeoHash.swift */; };
+		60973CEC2240D494008C44E7 /* GFIOSGeoHashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60973CEB2240D494008C44E7 /* GFIOSGeoHashTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		60973CD22240BE93008C44E7 /* GeoFirestoreIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoFirestoreIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60973CD72240BE93008C44E7 /* GeoFirestoreIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoFirestoreIOSTests.swift; sourceTree = "<group>"; };
 		60973CD92240BE93008C44E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60973CE32240C109008C44E7 /* GeoFirestoreIOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoFirestoreIOS.swift; sourceTree = "<group>"; };
+		60973CE62240C804008C44E7 /* GeoFirestoreIOSProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoFirestoreIOSProtocol.swift; sourceTree = "<group>"; };
+		60973CE92240D26D008C44E7 /* GFIOSGeoHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFIOSGeoHash.swift; sourceTree = "<group>"; };
+		60973CEB2240D494008C44E7 /* GFIOSGeoHashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFIOSGeoHashTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,8 @@
 		60973CCB2240BE92008C44E7 /* GeoFirestoreIOS */ = {
 			isa = PBXGroup;
 			children = (
+				60973CE82240D1F0008C44E7 /* classes */,
+				60973CE52240C7D2008C44E7 /* protocols */,
 				60973CCC2240BE92008C44E7 /* GeoFirestoreIOS.h */,
 				60973CCD2240BE92008C44E7 /* Info.plist */,
 			);
@@ -82,8 +92,26 @@
 			children = (
 				60973CD72240BE93008C44E7 /* GeoFirestoreIOSTests.swift */,
 				60973CD92240BE93008C44E7 /* Info.plist */,
+				60973CEB2240D494008C44E7 /* GFIOSGeoHashTests.swift */,
 			);
 			path = GeoFirestoreIOSTests;
+			sourceTree = "<group>";
+		};
+		60973CE52240C7D2008C44E7 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				60973CE62240C804008C44E7 /* GeoFirestoreIOSProtocol.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		60973CE82240D1F0008C44E7 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				60973CE32240C109008C44E7 /* GeoFirestoreIOS.swift */,
+				60973CE92240D26D008C44E7 /* GFIOSGeoHash.swift */,
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +176,7 @@
 				TargetAttributes = {
 					60973CC82240BE92008C44E7 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					60973CD12240BE93008C44E7 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +223,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60973CE42240C109008C44E7 /* GeoFirestoreIOS.swift in Sources */,
+				60973CE72240C804008C44E7 /* GeoFirestoreIOSProtocol.swift in Sources */,
+				60973CEA2240D26D008C44E7 /* GFIOSGeoHash.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60973CEC2240D494008C44E7 /* GFIOSGeoHashTests.swift in Sources */,
 				60973CD82240BE93008C44E7 /* GeoFirestoreIOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +374,7 @@
 		60973CDE2240BE93008C44E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.helpeeapp.GeoFirestoreIOS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +401,7 @@
 		60973CDF2240BE93008C44E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +427,7 @@
 		60973CE12240BE93008C44E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KQQS2A4VZL;
 				INFOPLIST_FILE = GeoFirestoreIOSTests/Info.plist;
@@ -409,6 +446,7 @@
 		60973CE22240BE93008C44E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KQQS2A4VZL;
 				INFOPLIST_FILE = GeoFirestoreIOSTests/Info.plist;
