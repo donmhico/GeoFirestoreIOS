@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 class GeoFirestoreIOS {
     
@@ -19,5 +20,22 @@ class GeoFirestoreIOS {
      * Path where the geohash will be saved
      */
     public static var geoHashPath: String = "h"
+    
+    /**
+     * The collection reference to be used
+     */
+    private var collectionRef: CollectionReference
+    
+    /**
+     * Initialize a new instance using the given collection reference
+     *
+     * @param collectionRef The collection reference to be used
+     */
+    init(collectionRef: CollectionReference) {
+        
+        self.collectionRef = collectionRef
+        
+    }
+    
     
 }
