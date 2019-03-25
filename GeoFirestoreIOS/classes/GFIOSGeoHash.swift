@@ -8,8 +8,9 @@
 
 import Foundation
 
-enum GFIOSGeoHashError: Error {
-    case invalidPrecision
+enum GFIOSGeoHashError: Int {
+    case INVALID_PRECISION = 201
+    case GEOHASH_NOT_GENERATED = 202
 }
 
 class GFIOSGeoHash: GeoPointProtocol {
@@ -33,14 +34,14 @@ class GFIOSGeoHash: GeoPointProtocol {
         // Make sure precision is greater than 0
         guard lPrecision > 1 else {
             
-            throw GFIOSGeoHashError.invalidPrecision
+            throw NSError(domain: "com.GeoFirestoreIOS.GFIOSGeoHashError", code: GFIOSGeoHashError.INVALID_PRECISION.rawValue, userInfo: nil)
             
         }
         
         // Make sure precision is less than MAX_PRECISION
         guard lPrecision < MAX_PRECISION else {
             
-            throw GFIOSGeoHashError.invalidPrecision
+            throw NSError(domain: "com.GeoFirestoreIOS.GFIOSGeoHashError", code: GFIOSGeoHashError.INVALID_PRECISION.rawValue, userInfo: nil)
             
         }
 
@@ -48,6 +49,14 @@ class GFIOSGeoHash: GeoPointProtocol {
         self.lng = longitude
         self.precision = lPrecision
         self._geoHash = encodeGeoHash()
+        
+        // Make sire geoHash isn't empty
+        if self._geoHash.isEmpty {
+            
+            throw NSError(domain: "com.GeoFirestoreIOS.GFIOSGeoHashError", code: GFIOSGeoHashError.GEOHASH_NOT_GENERATED.rawValue, userInfo: nil)
+            
+        }
+        
         
     }
     

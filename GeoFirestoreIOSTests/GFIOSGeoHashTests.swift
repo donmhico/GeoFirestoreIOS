@@ -39,6 +39,7 @@ class GFIOSGeoHashTests: XCTestCase {
         }
         catch {
             
+            XCTAssertTrue(false)
             
         }
         
@@ -56,7 +57,9 @@ class GFIOSGeoHashTests: XCTestCase {
         }
         catch {
             
-            XCTAssertEqual(String.init(describing: error), String.init(describing: GFIOSGeoHashError.invalidPrecision))
+            let e = error as NSError
+            
+            XCTAssertEqual(GFIOSGeoHashError.INVALID_PRECISION.rawValue, e.code)
             
         }
         
@@ -74,7 +77,9 @@ class GFIOSGeoHashTests: XCTestCase {
         }
         catch {
             
-            XCTAssertEqual(String.init(describing: error), String.init(describing: GFIOSGeoHashError.invalidPrecision))
+            let e = error as NSError
+            
+            XCTAssertEqual(GFIOSGeoHashError.INVALID_PRECISION.rawValue, e.code)
             
         }
         
